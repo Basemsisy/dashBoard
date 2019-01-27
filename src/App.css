@@ -1,0 +1,48 @@
+/*start global*/
+a, a:hover {
+  text-decoration: none;
+  color: #FFF
+}
+:root {
+  --main-color: #5384ff;
+  --border-color: #adb3c0;
+  --label-color: #8492af
+}
+
+body {background-color: #f6f7fa;}
+
+* {font-family: 'Ubuntu', sans-serif;}
+/*End global*/
+
+/*Start main*/
+main {
+  float: right;
+  width: 83%;
+  transition: .3s
+}
+/*End main*/
+
+
+/* media aueris */
+@media (max-width: 576px) {
+  
+  main {width: 100%}
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+  main {width: 100%}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  main {width: 100%}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  main {width: 100%}
+}
+

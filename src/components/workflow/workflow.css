@@ -1,0 +1,116 @@
+.workflow {
+    padding: 20px 0
+ }
+ 
+ .todo__header,
+ .inprogress__header,
+ .completed__header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 15px 0 15px 15px;
+    text-transform: capitalize
+ }
+ 
+ .todo__header :first-child,
+ .inprogress__header :first-child,
+ .completed__header :first-child {
+    margin-bottom: 0;
+    line-height: normal;
+    font-size: 25px
+ } 
+ 
+ .todo__number,
+ .inprogress__number,
+ .completed__number {
+    color: var(--label-color)
+ }
+ 
+ .todo__header label,
+ .inprogress label,
+ .completed label {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto 0 auto 22px;
+    font-size: 30px;
+    color: #8492af
+ 
+ }
+ 
+ .todo__item,
+ .inprogress__item,
+ .completed__item {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-gap: 10px;
+    padding: 15px 0px;
+    background-color: #FFF;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px
+ }
+ 
+ .todo__item label,
+ .inprogress__item label,
+ .completed__item label {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--main-color);
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 25px;
+    text-transform: capitalize
+ }
+ 
+ .todo__item div h6,
+ .inprogress__item div h6,
+ .completed__item div h6 {
+    margin:0
+ }
+ 
+ .todo__item time,
+ .inprogress__item time,
+ .completed__item time {
+    font-size: 14px;
+    color: var(--label-color)
+ }
+ 
+ .todo__item time::before,
+ .inprogress__item time::before,
+ .completed__item time::before {
+    content: '\f017';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    margin-right: 4px
+ }
+ 
+ .todo__item__setting,
+ .inprogress__item__setting,
+ .completed__item__setting {
+    margin:auto;
+    font-size: 25px;
+    color: #9a9b9c
+ }
+ 
+ .todo__item__setting:hover,
+ .inprogress__item__setting:hover,
+ .completed__item__setting:hover {
+    color: #adb4c1;
+    cursor: pointer;
+ }
+
+ .inprogress__item:last-child time  {
+    color: #fa73a0
+ }
+ /*Start completed*/
+ .completed__item time {
+    color: #5ad66b
+ }
+ .completed__item time::before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+ }
+ /*End tasks*/

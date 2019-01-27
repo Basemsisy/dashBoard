@@ -1,0 +1,275 @@
+/*Start Statistics*/
+ .statistics {
+    padding: 20px 0;
+    text-transform: capitalize;
+ }
+ 
+ .statistics h1 {text-transform: capitalize}
+ 
+ .sales,
+ .reports{
+    background-color: #FFF;
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    height: 100%
+ }
+ 
+ .sales h4,
+ .reports h4 {
+    float: left;
+    padding: 10px;
+    color: var(--label-color)
+ }
+ 
+ .sales .select-box,
+ .reports .select-box{
+    float: right;
+    margin: 10px;
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+    line-height: 20px;
+    color: var(--label-color)
+ }
+ 
+ .sales__select, .reports__select {
+    border: none;
+    outline: none;
+    background-color: #FFF
+ }
+ /*End Statistics*/
+ 
+ /*Start tasks*/
+ .events {padding: 20px 0}
+
+ .up {position: relative;}
+
+ .tasks,
+ .messegs,
+ .activitys {
+    background-color: #FFF;
+    border: 1px solid var(--border-color);
+    margin: auto;
+    margin-bottom: 20px
+ }
+ 
+ .tasks__header,
+ .messegs__header,
+ .activitys__header {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    padding: 15px 15px;
+    border-bottom: 1px solid var(--border-color)
+ }
+ 
+ .tasks__header :first-child,
+ .messegs__header :first-child,
+ .activitys__header :first-child {
+    margin-bottom: 0;
+    line-height: normal;
+    font-size: 25px
+ } 
+ 
+ .tasks__header :not(:first-child),
+ .messegs__header :not(:first-child),
+ .activitys__header :not(:first-child) {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: #FFF;
+    border-radius: 50%;
+ }
+ 
+ .tasks__header :not(:first-child):last-of-type {background-color: #f83c7b}
+ 
+ .tasks__task,
+ .messegs__messege,
+ .activitys__activity {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-gap: 10px;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--border-color)
+ }
+
+.up:last-child .tasks__task,
+ .messegs__messege:last-of-type {border:none}
+ 
+ .tasks__task {padding: 20.8px 0}
+
+ .tasks__task label,
+ .messegs__messege label,
+ .activitys__activity label{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--main-color);
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 25px;
+    text-transform: capitalize
+ }
+
+ .tasks__task div h6,
+ .messegs__messege div h6,
+ .activitys__activity div h6 {margin:0}
+
+ .tasks__task div time,
+ .messegs__messege div time,
+ .activitys__activity div time {
+    font-size: 14px;
+    color: #bac1d2
+ }
+
+ .tasks__task div time::before,
+ .activitys__activity time::before{
+    content: '\f017';
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    margin-right: 4px;
+    color: var(--label-color)
+ }
+
+ .task-setting {
+    margin:auto;
+    font-size: 25px;
+    color: var(--label-color)
+ }
+
+ .task-setting:hover {
+     color: #adb4c1;
+     transition: .3s;
+     cursor: pointer;
+ }
+
+ .task-setting-menu {
+     position: absolute;
+     right: 0;
+     top: 70px;
+     background-color: #d9dbe0;
+     margin: 0;
+     display: none;
+     z-index: 1;
+     border-radius: 5px
+ }
+
+ .task-setting-menu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #d9dbe0 transparent;
+    visibility: visible;
+ }
+
+ .task-setting-menu li {
+     padding: 10px;
+     font-size: 19px;
+     font-weight:400;
+     transition: .4s;
+     cursor: pointer;
+ }
+
+ .task-setting-menu li:hover {
+     background-color: var(--main-color);
+     color: #FFF;
+ }
+ /*End tasks*/
+ 
+ /*Start messegs*/
+ .messegs__header,
+ .activitys__header{
+    grid-template-columns: 5fr 1fr
+ }
+ 
+ .messegs__messege,
+ .activitys__activity {grid-template-columns: .3fr 1fr}
+ 
+ .messegs__messege div h6 {display: inline}
+ 
+ .messegs__messege div span {
+    display: block;
+    font-size: 13px
+ }
+ 
+ .messegs__messege div i {
+    color: #8492af;
+    margin: 10px 10px 0 0
+ }
+ /*End messegs*/
+ 
+ /*Start activitys*/
+ .activitys__activity {
+    border-bottom: none;
+    position: relative;
+    padding: 21.1px 0;
+    z-index: 1
+ }
+
+ .activitys__activity::after {
+    content : '';
+    display: block;
+    background-color: var(--border-color);
+    width: 2px;
+    height: 80px;
+    position: absolute;
+    left: 11%;
+    top: 55px;
+    z-index: -1
+ }
+
+ .activitys__activity:last-child::after {display: none}
+ /*End activitys*/
+
+ /******meadia queris******/
+ @media (max-width: 575.98px) {
+    .sales,
+    .reports {
+        height: auto;
+        margin-bottom: 20px
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .sales,
+    .reports {
+        height: auto;
+        margin-bottom: 20px
+    }
+ }
+ 
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .reports {
+        height: 100%
+    }
+    .sales h4, .reports h4 {
+        text-align: center;
+        float: none;
+        margin: 0
+    }
+    .sales .select-box, .reports .select-box {
+        margin: auto;
+        float: none;
+        width: 170px;
+        margin-bottom: 10px
+    }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+
+ }
+
+ @media (min-width: 1200px) {
+
+ }

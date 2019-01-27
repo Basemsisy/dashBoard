@@ -1,0 +1,92 @@
+.calender {padding: 20px 0}
+
+.calender__header {
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    margin-bottom: 20px
+}
+.calender__head {
+    margin: 0
+}
+.calender__select-box{
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--label-color);
+    background-color: #f6f7fa
+}
+
+.select {
+    border: none;
+    outline: none;
+    background-color: #f6f7fa;
+    font-weight: 700;
+    color: #000000
+}
+
+.table {background-color: #FFF}
+
+.th {
+    width: 14.28%;
+    text-transform: uppercase
+}
+
+.table .th,
+.table .td {
+    border: 1px solid #dadee7
+}
+
+.table .td {
+    height: 6rem;
+    font-weight: 700;
+    padding:0
+}
+
+.table td > :first-child {padding: .75rem 0 0 .75rem}
+
+.td span {
+    display: block;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-left: 4px solid var(--main-color);
+    background-color: #f6f7fa;
+    margin-top: 2px
+}
+
+span.pink {border-color: #f83c7b}
+
+.dec {color: var(--label-color)}
+
+.table td > :first-child.item__next {padding-bottom: 35px}
+
+
+ /******meadia queris******/
+ @media (max-width: 575.98px) {
+     .table tr .td:nth-of-type(7),
+     .table tr .th:nth-of-type(7),
+     .table tr .td:nth-of-type(6),
+     .table tr .th:nth-of-type(6),
+     .table tr .td:nth-of-type(5),
+     .table tr .th:nth-of-type(5) {
+        display: none
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+
+ }
+ 
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+
+ }
+
+ @media (min-width: 1200px) {
+
+ }
